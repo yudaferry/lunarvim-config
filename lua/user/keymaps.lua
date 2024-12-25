@@ -23,3 +23,11 @@ lvim.builtin.which_key.mappings["n"] = {
   m = { "<cmd>Noice messages<CR>", "Noice messages" },
   t = { "<cmd>Noice telescope<CR>", "Noice telescope" },
 }
+
+lvim.builtin.which_key.mappings["F"] = {
+  name = "Flutter",
+  r = { "<cmd>FlutterRun<CR>", "Run Flutter" },
+  q = { "<cmd>FlutterQuit<CR>", "Stop existing flutter" },
+  c = { "<cmd>FlutterLogClear<CR>", "Clear flutter log" },
+  t = { "<cmd>FlutterLogToggle<CR>", "Toggle flutter log" },
+}

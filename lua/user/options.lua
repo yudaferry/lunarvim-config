@@ -1,12 +1,17 @@
 lvim.colorscheme = "retrobox"
 
+lvim.builtin.nvimtree.setup.view.preserve_window_proportions = true
+lvim.builtin.nvimtree.setup.update_cwd = false
+-- vim.opt.equalalways = false
+-- vim.api.nvim_win_set_option(0, 'winfixwidth', true)
+-- vim.api.nvim_win_set_option(0, 'winfixheight', true)
 vim.cmd("set rnu")
 vim.cmd("set wrap")
 
 lvim.builtin.treesitter = {
-  ensure_installed = { "javascript", "typescript", "lua", "python", "json" }, -- Add more languages here
+  ensure_installed = { "javascript", "typescript", "lua", "python", "json", "dart" }, -- Add more languages here
   highlight = {
-    enable = true,                                                            -- Enable syntax highlighting
+    enable = true,                                                                    -- Enable syntax highlighting
   },
   indent = {
     enable = true, -- Enable automatic indentation
@@ -15,7 +20,6 @@ lvim.builtin.treesitter = {
     enable = true, -- Enable Tree-sitter-based folding
   },
 }
-
 
 -- for folding (open/close code block)
 vim.opt.foldmethod = "expr"
@@ -26,7 +30,6 @@ vim.opt.foldlevel = 99      -- fold status will not be save when u re-enter the 
 vim.opt.foldlevelstart = 99 -- there will be no fold once we visit a file
 vim.opt.foldenable = false
 lvim.format_on_save = true
-lvim.builtin.nvimtree.setup.update_cwd = false
 lvim.builtin.project.active = false
 lvim.builtin.project.manual_mode = false
 

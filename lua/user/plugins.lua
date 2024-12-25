@@ -3,7 +3,7 @@ lvim.plugins = {
   { "sindrets/diffview.nvim" },
   {
     "isakbm/gitgraph.nvim",
-    opts = require("list_plugin.gitgraph")
+    -- opts = require("list_plugin.gitgraph")
   },
   { "akinsho/toggleterm.nvim" },
   { "mgierada/lazydocker.nvim" },
@@ -40,7 +40,7 @@ lvim.plugins = {
     lazy = false,
     dependencies = {
       'nvim-lua/plenary.nvim',
-      'stevearc/dressing.nvim',   -- optional for vim.ui.select
+      'stevearc/dressing.nvim', -- optional for vim.ui.select
     },
     config = true,
   }

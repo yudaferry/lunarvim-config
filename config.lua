@@ -10,6 +10,6 @@ reload "user.keymaps"
 reload "list_plugin.session"
 reload "list_plugin.lazydocker"
 reload "list_plugin.noice"
+
 -- reload "list_plugin.tabnine"
 -- reload "list_plugin.codeium"
-reload "list_plugin.null_ls"
